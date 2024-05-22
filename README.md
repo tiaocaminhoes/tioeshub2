@@ -2298,7 +2298,7 @@ end
 
 
 
-local Library = Update:Window("Dr.Peste","9614132122",Enum.KeyCode.RightControl);
+local Library = Update:Window("tiaohub","9614132122",Enum.KeyCode.RightControl);
 Main = Library:Tab("General",6026568198)
 Ss = Library:Tab("Auto Stats",7040410130)
 P = Library:Tab("Combat",7251993295)
@@ -2308,10 +2308,10 @@ S = Library:Tab("Buy Item",6031265976)
 D = Library:Tab("Devil Fruit",7044233235)
 Misc = Library:Tab("Misc Game",6034509993)
 
-Main:Seperator("Welcome To Dr.Peste Hub Community")
+Main:Seperator("tiao comunity")
 
-Main:Button("Canal DO Produtor",function()
-    setclipboard("https://www.youtube.com/channel/UCMhX99w3W24yP7VaDJMlbNQ")
+Main:Button("tst ytb",function()
+    setclipboard("https://www.youtube.com/channel/UCyp3APjUVlm1W3as2iJLVow")
 end)
 
 local Time = Main:Label("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
@@ -6709,3 +6709,5 @@ spawn(function()
 end)
 --C
 
+
+	
